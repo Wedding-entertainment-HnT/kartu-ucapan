@@ -1,0 +1,4 @@
+Taruh file kamu di folder ini dengan nama persis:
+  musik.mp3   -> lagu latar (lagu favorit kalian)
+  video.mp4   -> video kenangan (disarankan di bawah 25 MB)
+  poster.jpg  -> (opsional) foto sampul video

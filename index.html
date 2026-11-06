@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Untukmu, Selamanya</title>
+<meta name="theme-color" content="#1a0d2b">
+<meta property="og:title" content="Ada pesan untukmu ♥">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Parisienne&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="fx" aria-hidden="true"></canvas>
+
+<section id="gate">
+  <button id="open" type="button">
+    <span class="seal" aria-hidden="true">♥</span>
+    <span class="gate-title">Ada pesan untuk <span data-to>kamu</span></span>
+    <span class="gate-hint">ketuk untuk membuka (nyalakan suara)</span>
+  </button>
+</section>
+
+<main id="card" hidden>
+  <header class="hero">
+    <h1>Aku sayang kamu</h1>
+    <p id="typed" class="typed" aria-live="polite"></p>
+    <span class="scroll-hint" aria-hidden="true">♡</span>
+  </header>
+
+  <section class="letter">
+    <p class="to">Untuk <span data-to>kamu</span>,</p>
+    <p class="r">Aku mau bilang hal yang sederhana, tapi paling jujur: aku sayang kamu.</p>
+    <p class="r">Bukan karena hari ini istimewa, tapi karena setiap hari bersamamu terasa seperti pulang.</p>
+    <p class="r">Aku tidak berjanji jadi sempurna. Aku berjanji berusaha, setiap hari, supaya keseriusanku nyata dan bukan hanya kata-kata.</p>
+    <p class="r">Aku ingin jadi pasangan hidupmu. Selamanya.</p>
+    <p class="sign r">Dari aku, <span data-from>yang menyayangimu</span></p>
+  </section>
+
+  <section class="video">
+    <h2>Sedikit kenangan untukmu</h2>
+    <div class="frame">
+      <video id="vid" controls playsinline preload="metadata" poster="assets/poster.jpg" src="assets/video.mp4"></video>
+      <p id="vnote" class="vnote" hidden>Video belum ditambahkan. Taruh file <b>video.mp4</b> di folder assets.</p>
+    </div>
+  </section>
+
+  <section class="vows">
+    <h2>Janjiku</h2>
+    <ul>
+      <li class="r">Menjagamu, di saat ramai maupun sepi.</li>
+      <li class="r">Jujur, bahkan ketika itu sulit.</li>
+      <li class="r">Terus belajar jadi lebih baik, bersamamu.</li>
+      <li class="r">Pulang padamu, selalu.</li>
+    </ul>
+  </section>
+
+  <footer class="end">
+    <p class="big">Selamanya, ya?</p>
+    <button id="again" type="button">Ledakkan cinta ♥</button>
+  </footer>
+</main>
+
+<audio id="bgm" src="assets/musik.mp3" loop preload="auto"></audio>
+<button id="music" type="button" aria-label="Musik" hidden>♪</button>
+<script src="script.js"></script>
+</body>
+</html>
